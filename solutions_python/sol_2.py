@@ -15,6 +15,5 @@ def fib():
     num = 0
     while num < 4000000:
         if num % 2 == 0:
-
-        num = num + start
+            num = num + start
 
