@@ -1,7 +1,7 @@
 import random
 import math
 
-def rho(n):    
+def pol_rho(n):    
     x = (random.randint(0, 2) % (n - 2))
     y = x
     c = (random.randint(0, 1) % (n - 1))
@@ -29,7 +29,7 @@ def is_prime(num):
 def main(n):
     if is_prime(n):
         return n
-    f = rho(n)
+    f = pol_rho(n)
     return max(main(f), main( n // f))
 
 print(main(600851475143))
